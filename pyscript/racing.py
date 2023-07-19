@@ -11,7 +11,7 @@ def set_racing_no_vr():
     button.press(entity_id="button.myles_pc_audio_monitor")
     button.press(entity_id="button.myles_pc_main_monitor_racing")
 
-# Double press --> Racing monitor, no vr
+# Double press --> Racing monitor with VR
 @service
 @mqtt_trigger(m.racing_button_mqtt, "payload == 'double'")
 def set_racing_vr():
