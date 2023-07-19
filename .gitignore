@@ -6,3 +6,4 @@
 !.gitignore
 !pyscript/
 !pyscript_modules/
+!readme.md
