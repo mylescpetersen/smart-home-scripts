@@ -1,0 +1,8 @@
+# Exclude
+/*
+*.pyc
+
+# Include
+!.gitignore
+!pyscript/
+!pyscript_modules/
