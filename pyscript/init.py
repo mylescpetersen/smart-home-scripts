@@ -1,5 +1,13 @@
 # --- Init file ---
 import sys
 
-if "/config/pyscript_modules" not in sys.path:
-    sys.path.append("/config/pyscript_modules")
+import_paths = [
+    "/pyscript_modules",
+    "/device_info"
+]
+
+for p in import_paths:
+    full_path = "/config" + p
+
+    if full_path not in sys.path:
+        sys.path.append(full_path)
