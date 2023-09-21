@@ -25,6 +25,5 @@ def tv_turns_off():
 
 @state_trigger(f"{d.tv} == 'on'")
 def tv_turns_on():
-    log.debug(d.speakers)
     switch.turn_on(entity_id=d.speakers)
 
